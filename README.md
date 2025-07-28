@@ -1,2 +1,4 @@
-# ittlpe
-Idempotent Test-Time Low Probability Estimation
+# Idempotent Test-Time Low Probability Estimation
+
+Idempotence is one of the central concepts in quantum physics, corresponding to an operator
+that doesn’t change its output being applied twice. Enforcing idempotence in generative deep learning may be interpreted as imposing a constraint on the model to be a projector on the manifold, corresponding to the train-time target distribution, which was explored for image generation models by Shocher et al. 2023. Idempotent test-time training has predicted to be a valuable approach for uncertainty quantification and adaptation to distribution shifts Durasov et al.2025. We find that although language models are iterative refiners of token predictions, they strugle to preserve idempotence. Thus, we train small-scale idempotent GPT model with expected qualities by design and provide proof-of-concept code for evaluations. Development of the project may let us obtain more robust and adaptable models and lower the probability of catastrophic risks
